@@ -2,9 +2,16 @@ package com.example.authenticationforaidetection.entities;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
-
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class History {
 
     @Id
@@ -17,5 +24,5 @@ public class History {
 
     private String link;
 
-    private float AIMeanPrediction;
+    private double AIMeanPrediction;
 }
